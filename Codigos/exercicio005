@@ -1,0 +1,58 @@
+#exercícios 005
+ 
+  
+ # 1) Aumente o tamanho do envelope 
+ # 2) Use formas diferentes da tartaruga enquanto faz a aba e enquanto faz o corpo 
+ # 3) Deixe o envelope colorido 
+ # 4) Reduza o aba do envelope 
+ 
+""" 
+import turtle 
+  
+turtle = turtle.Turtle() 
+turtle.color('red') 
+  
+for _ in [1, 2, 3]: 
+    turtle.forward(100) 
+    turtle.right(120) 
+  
+for _ in [1, 2, 3, 4]: 
+  turtle.forward(100) 
+  turtle.right(90)"""
+
+#codígo alterado:
+
+import turtle
+
+turtle = turtle.Turtle()
+turtle.color('red')
+turtle.shape('circle') # Forma diferente da tartaruga
+
+turtle.begin_fill() # Inicia o preenchimento da forma
+for _ in [1, 2, 3]:
+    turtle.forward(150) # Aumento do tamanho do envelope
+    turtle.right(120)
+turtle.end_fill() # Finaliza o preenchimento da forma
+
+turtle.color('blue') # Mudança da cor para azul
+turtle.shape('turtle') # Forma diferente da tartaruga
+
+turtle.penup() # Levanta a caneta
+turtle.goto(-75, 25) # Posiciona a tartaruga para fazer a aba
+turtle.pendown() # Abaixa a caneta
+
+turtle.color('green') # Mudança da cor para verde
+turtle.width(2) # Redução do tamanho da aba
+for _ in [1, 2, 3]:
+    turtle.forward(50)
+    turtle.right(120)
+
+turtle.penup() # Levanta a caneta
+turtle.goto(0, 0) # Posiciona a tartaruga para fazer o corpo
+turtle.pendown() # Abaixa a caneta
+
+turtle.color('yellow') # Mudança da cor para amarelo
+turtle.width(1) # Redução do tamanho do corpo
+for _ in [1, 2, 3, 4]:
+    turtle.forward(50)
+    turtle.right(90)
