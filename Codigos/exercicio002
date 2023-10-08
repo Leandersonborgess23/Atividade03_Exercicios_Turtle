@@ -1,0 +1,34 @@
+#Exercícios 002
+
+
+ # 1) Mude a cor da linha 
+ # 2) Mude o formato da tartaruga 
+ # 3) Mude o tamanho do quadrado 
+  
+"""
+ import turtle 
+  
+ turtle = turtle.Turtle() 
+ turtle.color('red') 
+ turtle.forward(100) 
+ turtle.left(90) 
+ turtle.forward(100) 
+ turtle.left(90) 
+ turtle.forward(100) 
+ turtle.left(90) 
+ turtle.forward(100)"""
+
+
+#código alterado:
+
+import turtle 
+
+turtle = turtle.shape("turtle")
+turtle.color("yellow")
+turtle.forward(200) 
+turtle.left(90) 
+turtle.forward(200) 
+turtle.left(90) 
+turtle.forward(200) 
+turtle.left(90) 
+turtle.forward(200)
