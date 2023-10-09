@@ -1,0 +1,107 @@
+#exercício 010
+
+  
+ # 1) Faça cada quadrado ter uma cor 
+ # 2) Faça cada quadrado com um formato diferente da tartaruga 
+ # 3) Faça os quadrados não se tocarem 
+ # 4) Desenhe um quadrado maior ao redor dos demais quadrados 
+ 
+""" 
+import turtle 
+  
+turtle = turtle.Turtle() 
+  
+for _ in range(4): 
+    turtle.forward(100) 
+    turtle.right(90) 
+  
+for _ in range(4): 
+   turtle.left(90) 
+   turtle.forward(100) 
+  
+for _ in range(4): 
+   turtle.forward(100) 
+   turtle.left(90) 
+  
+for _ in range(4): 
+   turtle.right(90) 
+   turtle.forward(100)"""
+
+#codígo alterado:
+
+import turtle
+
+# Define a cor de fundo
+turtle.bgcolor("black")
+
+# Desenha um quadrado maior ao redor dos demais quadrados
+turtle.color("white")
+turtle.pensize(3)
+turtle.penup()
+turtle.goto(-150, -150)
+turtle.pendown()
+for _ in range(4):
+    turtle.forward(300)
+    turtle.right(90)
+turtle.penup()
+turtle.home()
+turtle.pendown()
+
+# Configurações para cada quadrado
+turtle.color("red")
+turtle.shape("triangle")
+turtle.pensize(2)
+turtle.penup()
+turtle.goto(-50, 50)
+turtle.pendown()
+turtle.fillcolor("red")
+turtle.begin_fill()
+for _ in range(4):
+    turtle.forward(100)
+    turtle.right(90)
+turtle.end_fill()
+
+turtle.color("blue")
+turtle.shape("square")
+turtle.pensize(2)
+turtle.penup()
+turtle.goto(50, 50)
+turtle.pendown()
+turtle.fillcolor("blue")
+turtle.begin_fill()
+for _ in range(4):
+    turtle.forward(100)
+    turtle.right(90)
+turtle.end_fill()
+
+turtle.color("green")
+turtle.shape("arrow")
+turtle.pensize(2)
+turtle.penup()
+turtle.goto(50, -50)
+turtle.pendown()
+turtle.fillcolor("green")
+turtle.begin_fill()
+for _ in range(4):
+    turtle.forward(100)
+    turtle.right(90)
+turtle.end_fill()
+
+turtle.color("yellow")
+turtle.shape("turtle")
+turtle.pensize(2)
+turtle.penup()
+turtle.goto(-50, -50)
+turtle.pendown()
+turtle.fillcolor("yellow")
+turtle.begin_fill()
+for _ in range(4):
+    turtle.forward(100)
+    turtle.right(90)
+turtle.end_fill()
+
+# Esconde a tartaruga
+turtle.hideturtle()
+
+# Mantém a janela aberta
+turtle.done()
