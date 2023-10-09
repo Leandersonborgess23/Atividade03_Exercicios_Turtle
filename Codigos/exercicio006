@@ -29,5 +29,8 @@ for _ in range(3):
     envelope.right(120)
 
 for _ in range(4):
-    envelope.left(90)
     envelope.forward(100)
+    envelope.left(90)
+    
+    
+    
