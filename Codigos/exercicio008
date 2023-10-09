@@ -1,0 +1,35 @@
+#exercícios 008 
+  
+ # 1) Acrescente cores 
+ # 2) Mude a largura da linha 
+ # 3) Aumente a quantidade de linhas 
+ 
+""" 
+import turtle 
+import random 
+  
+turtle = turtle.Turtle() 
+  
+colors = ['purple', 'blue', 'yellow', 'green', 'pink'] 
+for _ in range (8): 
+    color = random.choice(colors) 
+    turtle.color(color) 
+    turtle.forward(100) 
+    turtle.backward(100) 
+    turtle.right(45)"""
+
+#codígo alterado:
+
+import turtle 
+import random 
+  
+turtle = turtle.Turtle() 
+turtle.pensize(5) # Alterando a largura da linha
+  
+colors = ['purple', 'blue', 'yellow', 'green', 'pink'] 
+for _ in range (12): # Aumentando a quantidade de linhas
+    color = random.choice(colors) 
+    turtle.color(color) 
+    turtle.forward(100) 
+    turtle.backward(100) 
+    turtle.right(30) # Alterando o ângulo de rotação
