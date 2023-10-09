@@ -1,6 +1,5 @@
 #Exercícios 002
 
-
  # 1) Mude a cor da linha 
  # 2) Mude o formato da tartaruga 
  # 3) Mude o tamanho do quadrado 
@@ -24,9 +23,9 @@
 import turtle
 
 turtle = turtle.Turtle()
-turtle.color('blue') # 1) Mude a cor da linha 
-turtle.shape('circle') # 2) Mude o formato da tartaruga 
-turtle.width(3) # 3) Mude o tamanho do quadrado
+turtle.color('blue') #mudar a cor da linha 
+turtle.shape('circle') #mudar o formato da tartaruga 
+turtle.width(3) #mudar o tamanho do quadrado
 turtle.forward(100)
 turtle.left(90)
 turtle.forward(100)
