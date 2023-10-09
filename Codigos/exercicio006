@@ -24,6 +24,7 @@ import turtle
 envelope = turtle.Turtle()
 envelope.color('green')
 
+#corrigindo o erro
 for _ in range(3):
     envelope.forward(100)
     envelope.right(120)
