@@ -1,0 +1,41 @@
+#exercícios 009
+  
+ # 1) Faça cada passo da tartaruga ter uma cor diferente 
+ # 2) Aumente/diminua o diâmetro do círculo 
+ 
+"""
+import turtle 
+  
+turtle = turtle.Turtle() 
+  
+for c in range(360): 
+    turtle.color('red') 
+    turtle.forward(1) 
+    turtle.right(1)"""
+
+
+#codígo alterado:
+
+import turtle
+
+turtle = turtle.Turtle()
+
+# Definindo uma lista de cores
+colors = ['red', 'blue', 'green', 'yellow']
+
+# Definindo o tamanho do círculo
+circle_size = 50
+
+for c in range(360):
+    # Atribuindo uma cor diferente a cada passo
+    turtle.color(colors[c % len(colors)])
+  
+    turtle.forward(1)
+    turtle.right(1)
+
+    # Aumentando o diâmetro do círculo em 1 a cada 90 graus
+    if c % 90 == 0:
+        circle_size += 1
+  
+    # Desenhando o círculo com o diâmetro atual
+    turtle.circle(circle_size)
