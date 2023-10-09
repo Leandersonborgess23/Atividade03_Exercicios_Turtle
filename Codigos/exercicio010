@@ -31,10 +31,10 @@ for _ in range(4):
 
 import turtle
 
-# Define a cor de fundo
+#define a cor de fundo
 turtle.bgcolor("black")
 
-# Desenha um quadrado maior ao redor dos demais quadrados
+#desenha um quadrado maior ao redor dos demais quadrados
 turtle.color("white")
 turtle.pensize(3)
 turtle.penup()
@@ -47,7 +47,7 @@ turtle.penup()
 turtle.home()
 turtle.pendown()
 
-# Configurações para cada quadrado
+#configurações para cada quadrado
 turtle.color("red")
 turtle.shape("triangle")
 turtle.pensize(2)
@@ -100,8 +100,8 @@ for _ in range(4):
     turtle.right(90)
 turtle.end_fill()
 
-# Esconde a tartaruga
+#esconde a tartaruga
 turtle.hideturtle()
 
-# Mantém a janela aberta
+#mantém a janela aberta
 turtle.done()
