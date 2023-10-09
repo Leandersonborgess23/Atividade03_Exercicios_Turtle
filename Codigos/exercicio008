@@ -24,12 +24,12 @@ import turtle
 import random 
   
 turtle = turtle.Turtle() 
-turtle.pensize(5) # Alterando a largura da linha
+turtle.pensize(5) #alterando a largura da linha
   
 colors = ['purple', 'blue', 'yellow', 'green', 'pink'] 
-for _ in range (12): # Aumentando a quantidade de linhas
+for _ in range (12): #aumentando a quantidade de linhas
     color = random.choice(colors) 
     turtle.color(color) 
     turtle.forward(100) 
     turtle.backward(100) 
-    turtle.right(30) # Alterando o ângulo de rotação
+    turtle.right(30) #alterando o ângulo de rotação
