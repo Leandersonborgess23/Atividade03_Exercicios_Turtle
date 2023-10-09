@@ -38,12 +38,12 @@ turtle.backward(120)
 turtle.backward(100) 
 turtle.right(90)
 
-# 1) Mude a distancia entre as lentes dos óculos
+#mudar a distancia entre as lentes dos óculos
 turtle.penup()
 turtle.backward(10)
 turtle.pendown()
 
-# 2) Mude o tamanho das lentes
+#mudar o tamanho das lentes
 for _ in range(2):
     turtle.forward(110)
     turtle.left(90)
