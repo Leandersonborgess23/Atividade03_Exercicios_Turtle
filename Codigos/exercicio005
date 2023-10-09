@@ -54,5 +54,5 @@ turtle.pendown() # Abaixa a caneta
 turtle.color('yellow') # Mudança da cor para amarelo
 turtle.width(1) # Redução do tamanho do corpo
 for _ in [1, 2, 3, 4]:
-    turtle.forward(50)
-    turtle.right(90)
+    turtle.forward(150)
+    turtle.left(90)
