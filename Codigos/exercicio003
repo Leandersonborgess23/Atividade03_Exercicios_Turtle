@@ -22,19 +22,19 @@ for color in ['blue', 'black', 'red', 'pink']:
 
 import turtle
 
-turtle.shape("arrow") 
+turtle.shape("arrow") #definir a forma da tartaruga
 turtle.pensize(10) 
 
-for color in ['pink', 'red', 'black', 'blue']: 
+for color in ['pink', 'red', 'black', 'blue']: #alteração na ordem das cores
     turtle.color(color) 
     turtle.forward(100) 
     turtle.right(90)
 
-turtle.penup()
+turtle.penup() #mudar a largura da linha
 turtle.goto(0, -120)
 turtle.pendown()
 
-for color in ['pink', 'red', 'black', 'blue']: 
+for color in ['pink', 'red', 'black', 'blue']: #desenhando o segundo quadrado
     turtle.color(color) 
     turtle.forward(100) 
     turtle.right(90)
