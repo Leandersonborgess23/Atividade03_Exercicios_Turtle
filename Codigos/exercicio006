@@ -1,0 +1,33 @@
+#exercícios 006
+ 
+  
+ # 1) Era para ser um envelope. Mas saiu errado. Corrija. 
+
+""" 
+import turtle 
+  
+turtle = turtle.Turtle() 
+turtle.color('green') 
+  
+for _ in [1, 2, 3]: 
+    turtle.forward(100) 
+    turtle.right(120) 
+  
+for _ in [1, 2, 3, 4]: 
+  turtle.left(90) 
+  turtle.forward(100)"""
+
+#codígo alterado:
+
+import turtle
+
+envelope = turtle.Turtle()
+envelope.color('green')
+
+for _ in range(3):
+    envelope.forward(100)
+    envelope.right(120)
+
+for _ in range(4):
+    envelope.left(90)
+    envelope.forward(100)
