@@ -27,12 +27,12 @@ import random
   
 turtle = turtle.Turtle() 
 colors = ['purple', 'blue', 'green', 'yellow', 'orange'] 
-turtle.width(3) # Altera a largura da linha
+turtle.width(3) #altera a largura da linha
 
-for _ in range(3): # Altera o loop para range(3) ao invés de uma lista
+for _ in range(3): #altera o loop para range(3) ao invés de uma lista
     color = random.choice(colors) 
     turtle.color(color) 
     turtle.forward(100) 
-    turtle.left(120) # Altera o ângulo para 120 graus (triângulo para cima)
+    turtle.left(120) #altera o ângulo para 120 graus (triângulo para cima)
   
-colors.remove('red') # Remove a cor vermelha da lista de cores possíveis
+colors.remove('red') #remove a cor vermelha da lista de cores possíveis
